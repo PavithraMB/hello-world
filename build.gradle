@@ -21,6 +21,10 @@ apply plugin: 'io.spring.dependency-management'
 
 jar {
     baseName = 'hello-world'
+    group    = "hello"
+    version  = "0.0.1-SNAPSHOT"
+    manifest { attributes "Main-Class": "hello.Application" }
+
 }
 
 repositories {
@@ -39,4 +43,5 @@ dependencies {
 docker {
     maintainer = 'pmuralidharan@websterbank.com'
     baseImage = 'openjdk:8u141-jdk-alpine'
+
 }
