@@ -38,5 +38,4 @@ dependencies {
 
 docker {
     maintainer = 'pmuralidharan@websterbank.com'
-    baseImage = 'openjdk:8u141-jdk-alpine'
 }
